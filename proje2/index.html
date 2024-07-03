@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hoşgeldiniz</title>
+    </head>
+    
+    <body>
+        <h1 style="color: darkblue;">WEB SİTEMİZE HOŞGELDİNİZ</h1>
+        <h3>ÜYE OLMAK İÇİN AŞAĞIDAKİ FORMU DOLDURUN</h3>
+        <form action="action.php" method="post">
+            <label for="isiminiz">isminizi giriniz:</label>
+            <input type="text" name="isim" id="isiminiz" placeholder="Ahmet" required maxlength="20">
+            <br><br>
+            <label for="soyisminiz">soyisminizi giriniz:</label>
+            <input type="text" name="soyisim" id="soyisminiz" placeholder="Yılmaz" required maxlength="20">
+            <br><br>
+            <label for="telefonnumaranız">*telefon numaranızı giriniz:</label>
+            <input type="tel" name="telefon" id="telefonnumaranız" placeholder="(555)-555-5555" minlength="10" maxlength="10">
+            <br><br>
+            <label for="mailadresiniz">mail adresinizi giriniz:</label>
+            <input type="email" name="mail" id="mailadresiniz" placeholder="no@thankyou.com" required maxlength="20">
+            <br><br>
+            <label for="şifreniz">şifrenizi belirleyiniz:</label>
+            <input type="password" name="şifre" id="şifreniz" placeholder="******" minlength="6" maxlength="16" required>
+            <br><br>
+            cinsiyetinizi seçin:
+            <label for="erk">erkek</label>
+            <input type="radio" name="cinsiyet" id="erk" required value="erkek">
+            <label for="kad">kadın</label>
+            <input type="radio" name="cinsiyet" id="kad"required value="kadın">
+            <br><br>
+            <input type="reset" name="sıfırla" id="sıfırla">
+            <input type="submit" name="gönder" id="gönder">
+        </form>
+    </body>
+</html>
